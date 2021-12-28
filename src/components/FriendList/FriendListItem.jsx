@@ -7,8 +7,7 @@ import {
   FriendName,
 } from './FriendList.styled';
 
-function FriendListItem({ friend }) {
-  const { isOnline, avatar, name } = friend;
+function FriendListItem({ friend: { avatar, name, isOnline } }) {
   return (
     <Friend isOnline={isOnline}>
       <FriendStatus isOnline={isOnline}></FriendStatus>

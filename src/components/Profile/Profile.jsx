@@ -47,17 +47,27 @@ function Profile({
   );
 }
 
+Profile.defaultProps = {
+  username: 'user name',
+  avatar: 'https://dummyimage.com/130x130/b3adb3/00ff48&text=Image+Placeholder',
+  tag: 'tag name',
+  location: 'user location',
+  stats: {
+    followers: 0,
+    views: 0,
+    likes: 0,
+  },
+};
+
 Profile.propTypes = {
-  user: PropTypes.exact({
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    stats: PropTypes.exact({
-      followers: PropTypes.number.isRequired,
-      views: PropTypes.number.isRequired,
-      likes: PropTypes.number.isRequired,
-    }),
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
   }),
 };
 

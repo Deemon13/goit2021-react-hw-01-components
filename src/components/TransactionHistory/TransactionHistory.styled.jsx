@@ -26,9 +26,15 @@ const TransactionsHeadRow = styled.tr`
 `;
 const TransactionsHeadRowType = styled.th`
   border-top-left-radius: 12px;
+  text-align: left;
+  padding-left: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 `;
 const TransactionsHeadRowCurrency = styled.th`
   border-top-right-radius: 12px;
+  text-align: right;
+  padding-right: 6px;
 `;
 
 const TransactionRow = styled.tr`
@@ -49,7 +55,7 @@ const TransactionType = styled.td`
 `;
 
 const TransactionCurrency = styled.td`
-  text-align: left;
+  text-align: right;
   padding-right: 6px;
 `;
 
