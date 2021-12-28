@@ -8,7 +8,7 @@ const StatisticsSection = styled.section`
   border: 1px solid rgb(0, 255, 0);
   border-radius: 12px;
 
-  background-color: grey;
+  background-color: #353535;
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
@@ -34,7 +34,7 @@ const StatisticStatsListItem = styled.li`
   justify-content: space-between;
   width: 100%;
   font-size: 1.2rem;
-  color: darkgreen;
+  color: rgb(0, 255, 0);
   font-weight: 400;
 
   :not(:last-child) {

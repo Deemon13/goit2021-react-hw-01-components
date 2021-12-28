@@ -8,7 +8,7 @@ const ProfileWrapper = styled.div`
   border: 1px solid rgb(0, 255, 0);
   border-radius: 12px;
 
-  background-color: grey;
+  background-color: #353535;
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
@@ -21,7 +21,7 @@ const ProfileAvatar = styled.img`
   display: inline-block;
   margin-bottom: 6px;
   max-width: 40%;
-  background-color: darkgreen;
+  background-color: rgb(0, 255, 0);
   border: 1px solid rgb(0, 255, 0);
   border-radius: 50%;
 `;
@@ -36,7 +36,7 @@ const ProfileName = styled.p`
 
 const ProfileNickName = styled.p`
   margin-bottom: 6px;
-  color: darkgreen;
+  color: rgb(0, 255, 0);
   font-style: italic;
   font-size: 1.2rem;
   font-weight: 500;
@@ -70,7 +70,7 @@ const StatsItem = styled.li`
 
 const StatName = styled.span`
   font-size: 1.2rem;
-  color: darkgreen;
+  color: rgb(0, 255, 0);
   font-weight: 400;
 `;
 

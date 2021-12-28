@@ -1,14 +1,14 @@
 import styled from '@emotion/styled';
 
 const FriendListWrapper = styled.ul`
-  margin: 0 auto;
+  margin: 0 auto 10px;
   padding: 10px 0;
   text-align: center;
   max-width: 320px;
   border: 1px solid rgb(0, 255, 0);
   border-radius: 12px;
 
-  background-color: grey;
+  background-color: #353535;
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
