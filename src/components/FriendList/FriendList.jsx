@@ -1,13 +1,25 @@
+import PropTypes from 'prop-types';
+
 import FriendListItem from './FriendListItem';
+
+import { FriendListWrapper } from './FriendList.styled';
 
 function FriendList({ friends }) {
   return (
-    <ul className="friend-list">
+    <FriendListWrapper>
       {friends.map(friend => (
         <FriendListItem key={friend.id} friend={friend} />
       ))}
-    </ul>
+    </FriendListWrapper>
   );
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }),
+  ),
+};
 
 export default FriendList;
