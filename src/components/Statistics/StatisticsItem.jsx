@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
 
+import { StatisticStatsListItem, StatPercentage } from './Statistics.styled';
+
 function StatisticsItem({ stat }) {
   const { label, percentage } = stat;
   return (
-    <li className="item">
+    <StatisticStatsListItem>
       <span className="label">{label}</span>
-      <span className="percentage">{percentage}%</span>
-    </li>
+      <StatPercentage>{percentage} %</StatPercentage>
+    </StatisticStatsListItem>
   );
 }
 

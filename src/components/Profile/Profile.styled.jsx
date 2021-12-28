@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 const ProfileWrapper = styled.div`
-  margin: 0 auto;
+  margin: 0 auto 10px;
   padding-top: 30px;
   text-align: center;
   max-width: 320px;
@@ -60,7 +60,7 @@ const StatsItem = styled.li`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px;
+  padding: 0 12px;
   flex-basis: calc((100% - 30px) / 3);
 
   :not(:last-child) {
