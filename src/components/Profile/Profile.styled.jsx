@@ -5,46 +5,46 @@ const ProfileWrapper = styled.div`
   padding-top: 30px;
   text-align: center;
   max-width: 320px;
-  border: 1px solid rgb(0, 255, 0);
+  border: 1px solid ${({ theme }) => theme.colors.mainColor};
   border-radius: 12px;
 
-  background-color: #353535;
+  background-color: ${({ theme }) => theme.colors.backgroundColorDark};
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
 const ProfileDescr = styled.div`
   padding-bottom: 10px;
-  border-bottom: 1px solid rgb(0, 255, 0);
+  border-bottom: 1px solid ${({ theme }) => theme.colors.mainColor};
 `;
 
 const ProfileAvatar = styled.img`
   display: inline-block;
   margin-bottom: 6px;
   max-width: 40%;
-  background-color: rgb(0, 255, 0);
-  border: 1px solid rgb(0, 255, 0);
+  background-color: ${({ theme }) => theme.colors.mainColor};
+  border: 1px solid ${({ theme }) => theme.colors.mainColor};
   border-radius: 50%;
 `;
 
 const ProfileName = styled.p`
   margin-bottom: 6px;
   text-transform: uppercase;
-  color: rgb(0, 255, 0);
+  color: ${({ theme }) => theme.colors.mainColor};
   font-size: 1.8rem;
   font-weight: 500;
 `;
 
 const ProfileNickName = styled.p`
   margin-bottom: 6px;
-  color: rgb(0, 255, 0);
+  color: ${({ theme }) => theme.colors.mainColor};
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 `;
 
 const ProfileLocation = styled.p`
-  color: rgb(0, 255, 0);
-  font-size: 1.2rem;
+  color: ${({ theme }) => theme.colors.mainColor};
+  font-size: 1.5rem;
   font-weight: 400;
 `;
 
@@ -64,19 +64,19 @@ const StatsItem = styled.li`
   flex-basis: calc((100% - 30px) / 3);
 
   :not(:last-child) {
-    border-right: 1px solid rgb(0, 255, 0);
+    border-right: 1px solid ${({ theme }) => theme.colors.mainColor};
   }
 `;
 
 const StatName = styled.span`
-  font-size: 1.2rem;
-  color: rgb(0, 255, 0);
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.mainColor};
   font-weight: 400;
 `;
 
 const StatValue = styled.span`
-  font-size: 1.2rem;
-  color: rgb(0, 255, 0);
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.mainColor};
   font-weight: 500;
 `;
 

@@ -5,20 +5,20 @@ const StatisticsSection = styled.section`
   padding-top: 10px;
   text-align: center;
   max-width: 320px;
-  border: 1px solid rgb(0, 255, 0);
+  border: 1px solid ${({ theme }) => theme.colors.mainColor};
   border-radius: 12px;
 
-  background-color: #353535;
+  background-color: ${({ theme }) => theme.colors.backgroundColorDark};
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
 const StatisticsTitle = styled.h2`
   padding-bottom: 10px;
   text-transform: uppercase;
-  color: rgb(0, 255, 0);
+  color: ${({ theme }) => theme.colors.mainColor};
   font-size: 1.8rem;
   font-weight: 500;
-  border-bottom: 1px solid rgb(0, 255, 0);
+  border-bottom: 1px solid ${({ theme }) => theme.colors.mainColor};
 `;
 
 const StatisticStatsList = styled.ul`
@@ -33,12 +33,12 @@ const StatisticStatsListItem = styled.li`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 1.2rem;
-  color: rgb(0, 255, 0);
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.colors.mainColor};
   font-weight: 400;
 
   :not(:last-child) {
-    border-bottom: 1px dashed rgb(0, 255, 0);
+    border-bottom: 1px dashed ${({ theme }) => theme.colors.mainColor};
     padding-bottom: 6px;
   }
 
@@ -48,7 +48,7 @@ const StatisticStatsListItem = styled.li`
 `;
 
 const StatPercentage = styled.span`
-  color: rgb(0, 255, 0);
+  color: ${({ theme }) => theme.colors.mainColor};
   font-weight: 500;
 `;
 

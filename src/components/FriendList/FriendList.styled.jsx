@@ -5,10 +5,10 @@ const FriendListWrapper = styled.ul`
   padding: 10px 0;
   text-align: center;
   max-width: 320px;
-  border: 1px solid rgb(0, 255, 0);
+  border: 1px solid ${({ theme }) => theme.colors.mainColor};
   border-radius: 12px;
 
-  background-color: #353535;
+  background-color: ${({ theme }) => theme.colors.backgroundColorDark};
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
@@ -20,10 +20,11 @@ const Friend = styled.li`
   align-items: center;
   justify-content: flex-start;
   border: 1px solid
-    ${props => (props.isOnline ? 'rgb(0,255,0)' : 'rgb(255,0,0)')};
+    ${({ isOnline, theme }) =>
+      isOnline ? theme.colors.mainColor : theme.colors.offlineColor};
   border-radius: 12px;
 
-  background-color: lightgrey;
+  background-color: ${({ theme }) => theme.colors.backgroundColorLight};
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 
   :not(:last-child) {
@@ -37,13 +38,15 @@ const FriendStatus = styled.span`
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 10px;
-  background-color: ${props => (props.isOnline ? 'darkgreen' : 'rgb(255,0,0)')};
+  background-color: ${({ isOnline, theme }) =>
+    isOnline ? theme.colors.secondaryColor : theme.colors.offlineColor};
 `;
 
 const FriendAvatar = styled.img`
   margin-right: 30px;
   border: 1px solid
-    ${props => (props.isOnline ? 'rgb(0,255,0)' : 'rgb(255,0,0)')};
+    ${({ isOnline, theme }) =>
+      isOnline ? theme.colors.mainColor : theme.colors.offlineColor};
   border-radius: 12px;
   padding: 2px;
   width: 60px;
@@ -53,8 +56,9 @@ const FriendAvatar = styled.img`
 
 const FriendName = styled.p`
   text-transform: uppercase;
-  font-size: 1.2rem;
-  color: ${props => (props.isOnline ? 'darkgreen' : 'rgb(255,0,0)')};
+  font-size: 2rem;
+  color: ${({ isOnline, theme }) =>
+    isOnline ? theme.colors.secondaryColor : theme.colors.offlineColor};
   font-weight: 500;
 `;
 

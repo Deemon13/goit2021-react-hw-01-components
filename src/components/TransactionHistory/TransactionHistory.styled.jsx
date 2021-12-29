@@ -5,24 +5,25 @@ const TransactionsWrapper = styled.div`
   text-align: center;
   width: 320px;
   border-radius: 12px;
-  border: 1px solid rgb(0, 255, 0);
-  background-color: #353535;
+  border: 1px solid ${({ theme }) => theme.colors.mainColor};
+  background-color: ${({ theme }) => theme.colors.backgroundColorDark};
   box-shadow: 5px 5px 20px 2px rgb(0 0 0/ 0.5);
 `;
 
 const Transactions = styled.table`
   width: 100%;
   border-collapse: collapse;
+  font-size: 1.5rem;
 `;
 
 const TransactionsHead = styled.thead`
-  border-bottom: 1px solid rgb(0, 255, 0);
-  background-color: lightgrey;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.mainColor};
+  background-color: ${({ theme }) => theme.colors.backgroundColorLight};
 `;
 
 const TransactionsHeadRow = styled.tr`
   text-transform: uppercase;
-  color: darkgreen;
+  color: ${({ theme }) => theme.colors.secondaryColor};
 `;
 const TransactionsHeadRowType = styled.th`
   border-top-left-radius: 12px;
@@ -39,11 +40,11 @@ const TransactionsHeadRowCurrency = styled.th`
 
 const TransactionRow = styled.tr`
   text-transform: uppercase;
-  color: rgb(0, 255, 0);
+  color: ${({ theme }) => theme.colors.mainColor};
   font-weight: 500;
 
   :not(:last-child) {
-    border-bottom: 1px dashed rgb(0, 255, 0);
+    border-bottom: 1px dashed ${({ theme }) => theme.colors.mainColor};
   }
 `;
 
